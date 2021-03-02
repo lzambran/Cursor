@@ -6,7 +6,7 @@ precio_servicio int =0;
 ndatos record;
 num int;
 --creacion del cursor 
-c_nsolicitud cursor for select * from cliente, solicitud, servicio,solicitud_servicio where 
+c_nsolicitud cursor for select * from cliente, solicitud, servicio where 
 cliente.id_cliente = solicitud_servicio.id_servicio and solicitud.id_solicitud = servicio.id_servicio and
  numero_solicitud='1';
 begin
